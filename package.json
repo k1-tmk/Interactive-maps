@@ -25,12 +25,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/tokyo-temples-map.git"
+    "url": "https://github.com/manhkhoa/tokyo-temples-map.git"
   },
   "bugs": {
-    "url": "https://github.com/yourusername/tokyo-temples-map/issues"
+    "url": "https://github.com/manhkhoa/tokyo-temples-map/issues"
   },
-  "homepage": "https://github.com/yourusername/tokyo-temples-map#readme",
+  "homepage": "https://github.com/manhkhoa/tokyo-temples-map#readme",
   "devDependencies": {},
   "dependencies": {},
   "engines": {
