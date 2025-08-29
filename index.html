@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tokyo Temples Map - 東京寺院マップ</title>
+    
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1><i class="fas fa-torii-gate"></i> Tokyo Temples Map</h1>
+            <p class="subtitle">Discover the spiritual heritage of Tokyo</p>
+        </header>
+
+        <!-- Search and Filter Section -->
+        <div class="controls">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search temples...">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All Temples</button>
+                <button class="filter-btn" data-filter="buddhist">Buddhist</button>
+                <button class="filter-btn" data-filter="shinto">Shinto</button>
+                <button class="filter-btn" data-filter="famous">Famous</button>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Map Container -->
+            <div class="map-container">
+                <div id="map"></div>
+            </div>
+
+            <!-- Sidebar with Temple List -->
+            <div class="sidebar">
+                <div class="sidebar-header">
+                    <h3><i class="fas fa-list"></i> Temple List</h3>
+                    <span id="templeCount">0 temples</span>
+                </div>
+                <div class="temple-list" id="templeList">
+                    <!-- Temple items will be populated here -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Temple Info Modal -->
+        <div id="templeModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="modalContent">
+                    <!-- Modal content will be populated here -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Leaflet JavaScript -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
